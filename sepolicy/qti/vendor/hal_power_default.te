@@ -17,3 +17,9 @@ allow hal_power_default proc_walt:dir search;
 allow hal_power_default proc_walt:file rw_file_perms;
 allow hal_power_default vendor_sysfs_msm_perf:file rw_file_perms;
 hal_client_domain(hal_power_default, hal_thermal)
+
+userdebug_or_eng(`
+
+# Allow reading /data/vendor/* for debugging
+  allow hal_power_default vendor_data_file:file r_file_perms;
+')
