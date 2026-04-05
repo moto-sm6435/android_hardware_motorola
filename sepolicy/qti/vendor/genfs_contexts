@@ -88,6 +88,7 @@ genfscon sysfs /firmware/devicetree/base/chosen/mmi    u:object_r:vendor_sysfs_d
 # PowerHal
 genfscon proc /sys/kernel/sched_lib_mask_force    u:object_r:proc_sched_lib_mask_cpuinfo:s0
 genfscon proc /sys/kernel/sched_lib_name          u:object_r:proc_sched_lib_mask_cpuinfo:s0
+genfscon proc /sys/walt u:object_r:proc_walt:s0
 
 # Powershare
 genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,battery_charger/tx_mode    u:object_r:vendor_sysfs_wlc:s0

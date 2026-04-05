@@ -29,6 +29,7 @@ type fsg_file, contextmount_type, file_type, vendor_file_type;
 
 # Power
 type proc_sched_lib_mask_cpuinfo, fs_type, proc_type;
+type proc_walt, fs_type, proc_type;
 
 # Powershare
 type vendor_sysfs_wlc, fs_type, sysfs_type;
