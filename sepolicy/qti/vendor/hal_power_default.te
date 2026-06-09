@@ -13,5 +13,4 @@ allow hal_power_default proc_walt:dir search;
 allow hal_power_default proc_walt:file rw_file_perms;
 allow hal_power_default vendor_sysfs_msm_perf:file rw_file_perms;
 allow hal_power_default sysfs_goodix_gesture:file rw_file_perms;
-allow hal_power_default hal_thermal_service:service_manager find;
-binder_call(hal_power_default, hal_thermal_server)
+hal_client_domain(hal_power_default, hal_thermal)
