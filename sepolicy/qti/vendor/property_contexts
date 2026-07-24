@@ -49,3 +49,9 @@ vendor.ese.                u:object_r:vendor_secure_element_prop:s0
 
 # SPM
 vendor.spu.    u:object_r:vendor_spm_prop:s0
+
+# Audio
+vendor.audio.usb_cctoggle u:object_r:vendor_audio_prop:s0 exact string
+
+# FRC
+vendor.gpp.frc.enable u:object_r:vendor_frc_prop:s0

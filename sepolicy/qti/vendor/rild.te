@@ -1,6 +1,8 @@
 get_prop(rild, vendor_radio_prop)
 get_prop(rild, wifi_hal_prop)
 
+dontaudit rild default_prop:file read;
+
 allow rild fwk_sensor_hwservice:hwservice_manager find;
 allow rild fwk_sensor_service:service_manager find;
 
